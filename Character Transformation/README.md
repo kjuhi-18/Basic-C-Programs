@@ -111,14 +111,7 @@ Lowercase equivalent: z
 
 ---
 
-## 📌 Suggested Enhancements
 
-* Add `if` conditions to validate input characters
-* Convert **entire strings** instead of single characters
-* Add menu-based options for conversion
-* Use `ctype.h` functions like `toupper()` and `tolower()` for comparison
-
----
 
 ## 🤝 Contributing
 

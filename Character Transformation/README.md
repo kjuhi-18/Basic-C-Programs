@@ -20,24 +20,24 @@ Basic-C-Programs/
 ## 🧠 What You’ll Learn
 
 * ✔️ How characters are stored internally using ASCII values
-* ✔️ How to transform characters (uppercase ↔ lowercase, digits, symbols)
-* ✔️ Using `if–else` conditions effectively
-* ✔️ Working with character input in C
+* ✔️ Manual conversion of characters using ASCII arithmetic
+* ✔️ Difference between uppercase and lowercase letters in ASCII
+* ✔️ Taking single character input using `scanf()`
 
 ---
 
 ## 📄 Program Overview (`code.c`)
 
-This program performs **character-level transformations** based on the input.
+This program demonstrates **manual case conversion** using **ASCII arithmetic**.
 
-### ✨ Common Transformations Covered
+### ✨ What the Program Does
 
-* Convert **lowercase to uppercase**
-* Convert **uppercase to lowercase**
-* Identify **digits, alphabets, and special characters**
-* Demonstrate ASCII-based character manipulation
+1. Accepts a **lowercase character** from the user
+2. Converts it to **uppercase** using `ASCII - 32`
+3. Accepts an **uppercase character** from the user
+4. Converts it to **lowercase** using `ASCII + 32`
 
-> 💡 The logic is built using simple conditions so beginners can easily understand.
+> 💡 This program does **not use if‑else conditions**. It assumes that the user enters **valid alphabet characters only**.
 
 ---
 
@@ -62,13 +62,15 @@ gcc code.c -o transform
 **Input:**
 
 ```
-Enter a character: a
+Enter the lower case character: a
+Enter the Upper case character: Z
 ```
 
 **Output:**
 
 ```
-Uppercase equivalent: A
+a character in the upper case is: A
+Z character in the lower case is: z
 ```
 
 ---
@@ -111,10 +113,10 @@ Lowercase equivalent: z
 
 ## 📌 Suggested Enhancements
 
-* Convert **entire strings** instead of one character
-* Add menu-based transformation options
-* Handle whitespace and special symbols
-* Use `ctype.h` functions like `toupper()` and `tolower()`
+* Add `if` conditions to validate input characters
+* Convert **entire strings** instead of single characters
+* Add menu-based options for conversion
+* Use `ctype.h` functions like `toupper()` and `tolower()` for comparison
 
 ---
 

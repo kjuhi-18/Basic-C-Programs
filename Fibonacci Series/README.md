@@ -132,14 +132,7 @@ Fibonacci Series: 0 1 1 2 3 5 8
 
 ---
 
-## 📌 Suggested Enhancements
 
-- Add a **recursive Fibonacci** program
-- Print only the **nth Fibonacci number**
-- Add input validation
-- Create a menu to choose the method
-
----
 
 ## 🤝 Contributing
 
